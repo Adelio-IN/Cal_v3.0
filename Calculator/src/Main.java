@@ -21,5 +21,11 @@ public class Main {
         advancedCalc.setNumbers(9, 3);
         advancedCalc.divide();
         advancedCalc.displayResult("/");
+
+        ScientificCalculator scientificCalc = new ScientificCalculator();
+
+        scientificCalc.setNumbers(5, 2);
+        scientificCalc.involution();
+        scientificCalc.displayResult("^");
     }
 }
