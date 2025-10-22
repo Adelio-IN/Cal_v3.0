@@ -30,4 +30,9 @@ class CalculatorTest {
     void testDivide() {
         assertEquals(2, calc.divide());
     }
+
+    @Test
+    void testInvolution() {
+        assertEquals(16, calc.involution());
+    }
 }

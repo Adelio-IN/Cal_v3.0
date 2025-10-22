@@ -53,6 +53,23 @@ class Calculator {
         return result;
     }
 
+    public int involution() {
+        if (num2 < 0) {
+            System.out.println("현재 음수 지수는 처리할 수 없습니다.");
+            result = Integer.MAX_VALUE;
+            return result;
+        }
+        if (num2 == 0) {
+            result = 1;
+            return result;
+        }
+        result = 1;
+        for (int i = 0; i < num2; i++) {
+            result *= num1;
+        }
+        return result;
+    }
+
     // 결과를 출력하는 메서드
     public void displayResult(String operator) {
         System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
